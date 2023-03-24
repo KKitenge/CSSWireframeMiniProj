@@ -1,0 +1,46 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+body {
+    margin: auto;
+}
+
+header {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;    
+}
+
+* {
+    box-sizing: border-box;
+    background-color: rgb(89, 81, 112);
+    font-family: Garamond, monospace, Tahoma, Verdana, serif, sans-serif;
+}
+
+.card {
+    flex:  1 0 0;
+    padding: 20px;
+    text-align: left;
+    border-style: dashed;
+    border-width: 2px;
+    min-width: 400px;
+    border-radius: 25px;
+}
+
+.card header {
+    padding: 10px;
+    background:rgba(232, 102, 236, 0.3)
+}
+
+@media screen and (max-width: 768px) {
+    main,
+    nav {flex-direction: column;}
+}
+
