@@ -5,7 +5,7 @@ main {
 }
 
 body {
-    margin: auto;
+    margin: 5%;
 }
 
 header {
@@ -14,14 +14,19 @@ header {
     justify-content:space-around;
 }
 
+.header2:hover,
+.header2:focus {
+      background-color: #591877;
+      color: #e4d17d;
+}  
+
 * {
     font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;    
 }
 
 * {
     box-sizing: border-box;
-    background-color: rgb(89, 81, 112);
-    font-family: Garamond, monospace, Tahoma, Verdana, serif, sans-serif;
+    background-color: rgb(89, 81, 112);    
 }
 
 .card {
@@ -32,11 +37,33 @@ header {
     border-width: 2px;
     min-width: 400px;
     border-radius: 25px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
 }
 
 .card header {
     padding: 10px;
     background:rgba(232, 102, 236, 0.3)
+}
+
+pre {
+    background: linear-gradient(#da55c3, #9198e5);
+    min-height: 120px;
+    border-radius: 20px;  
+    font-size: 14px;
+    transition-property: font-size;
+    transition-duration: 3s;      
+}
+
+pre:hover {
+    font-size: 20px;
+}
+
+pre:hover,
+pre:focus {
+  background-color: #fff;
+  color: #e4d17d;
 }
 
 @media screen and (max-width: 768px) {
