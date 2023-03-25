@@ -27,7 +27,7 @@
             </section>
             <section class="card">
                 <header class="header2">Flexbox Column</header>
-                <p>Use this to create a Flexbox column layout.</p>
+                <p>Use this to create a Flexbox column layout.
                 <pre>
                     .column {
                         display: flex;
@@ -51,18 +51,44 @@
             </section>
             <section class="card">
                 <header class="header2">Linear Gradients</header>
+                <p>This will create a  background which becomes Linear Gradiant from top to bottom
+                <pre>
+                    .linear-gradient-background {
+                        background-image: linear-gradient
+                        (#da55c3, #9198e5);
+                      }
+                </pre>
+                </p>
             </section>
             <section class="card">
                 <header class="header2">Box Transition Glow</header>
+                <p>Uses box shadows to glow on hover
+                <pre>
+                    .code-card .card-header {
+                        border-radius: 30px;
+                        transition: all 0.5s ease-in-out;
+                      }
+                      
+                      .code-card:hover, .code-card:hover .card-header {
+                        box-shadow: inset 0px 0px 6px grey, 0 0 20px grey;
+                      }
+                </pre>
+                </p>
             </section>
             <section class="card">
                 <header class="header2">Overlay Card with Title</header>
+                <p>Uses position properties and negative margins to raise elements higher than their natural starting point.
+                <pre class="fixed">.card-header {
+                    position: relative;
+                    margin-top: -10px;
+                  }
+                </pre>
+                </p>
             </section>
         </main>
         <br>
 
         <footer><p>Created by CL and KK</p></footer>
-    
     
     </body>
 </html>
